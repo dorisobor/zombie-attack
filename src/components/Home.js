@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+//start button will lead to the game 
 
 export default ({ history }) => (
 <div className = "start-page-container">
