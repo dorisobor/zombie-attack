@@ -2,15 +2,15 @@ import React from "react";
 import Player from "./PlayerNameInput";
 
 
-//start button will lead to the game 
-
-export default ({ history }) => (
+//start button will lead to the game page/component
+//export default ({ history })
+export default () => (
 <div className = "start-page-container">
 <h1>Zombie Attack</h1>
 
-<button onClick={()=> history.push("/Game")}>
+{/* <button type="submit" onClick={()=> history.push("/Game")}>
  START THE GAME
-</button>
+</button> */}
 
 <div className = "form-container"> 
  <Player /></div>

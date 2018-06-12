@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import zombieWalking from "./../images/zombie-walking.gif";
 
 
+
+
 class Game extends Component {
   render() {
     return (
