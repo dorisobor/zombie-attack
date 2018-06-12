@@ -12,7 +12,7 @@ class PlayerName extends Component {
         this.state = {value: ''};
     
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.submitName = this.submitName.bind(this);
       }
     
       
@@ -20,16 +20,16 @@ class PlayerName extends Component {
         this.setState({value: event.target.value});
       }
     
-      handleSubmit(event) {
+      submitName(e) {
         alert("Hello player: " + this.state.value);
-        event.preventDefault();
+        e.preventDefault();
         this.props.history.push('/Game');
 
       }
     
       render() {
         return (
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.submitName}>
           
               <input type="text" placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
            
