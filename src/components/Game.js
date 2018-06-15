@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //imports the gif image as zombieWalking
 import zombieWalking from "./../images/zombie-walking.gif";
 
+import DisplayPlayerName from "./DisplayPlayerName";
 
 
 
@@ -13,6 +14,9 @@ class Game extends Component {
 <div className="zombie-walking">
 <img src={zombieWalking} alt="walking-zombie"/>
 </div>
+
+<DisplayPlayerName />
+
   </div>
 
 );

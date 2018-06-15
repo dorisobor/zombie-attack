@@ -9,27 +9,30 @@ import { withRouter } from 'react-router-dom';
 class PlayerName extends Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {playerName: ''};
     
         this.handleChange = this.handleChange.bind(this);
-        this.submitName = this.submitName.bind(this);
+        this.submitPlayerName = this.submitPlayerName.bind(this);
       }
     
       
       handleChange(event) {
-        this.setState({value: event.target.value});
+        this.setState({playerName: event.target.value});
       }
     
-      submitName(e) {
-      console.log("Hello player: " + this.state.value);
+      submitPlayerName(e) {
         e.preventDefault();
+        if (this.state.playerName === '') {
+         console.log( "error") ;
+        } else {
+     console.log("Hello player: " + this.state.playerName);
         this.props.history.push('/Game');
-
+      }
       }
     
       render() {
         return (
-          <form onSubmit={this.submitName}>
+          <form onSubmit={this.submitPlayerName}>
           
               <input type="text" placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
            
