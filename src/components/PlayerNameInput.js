@@ -21,7 +21,7 @@ class PlayerName extends Component {
       }
     
       submitName(e) {
-        alert("Hello player: " + this.state.value);
+      console.log("Hello player: " + this.state.value);
         e.preventDefault();
         this.props.history.push('/Game');
 
