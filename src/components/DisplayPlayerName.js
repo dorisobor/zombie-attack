@@ -1,10 +1,10 @@
 import React from "react";
-// import PlayerNameInput from "./PlayerNameInput";
+
 
 function DispayPlayerName(props){
     return (
         <div className = "playername-container">
-        <p>test</p>
+        <h4>Hello player: {props.playerName}</h4>
           </div>
         
         

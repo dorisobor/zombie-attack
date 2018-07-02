@@ -4,7 +4,7 @@ import Player from "./PlayerNameInput";
 
 //start button will lead to the game page/component
 //export default ({ history })
-export default () => (
+export default (props) => (
 <div className = "start-page-container">
 <h1>Zombie Attack</h1>
 
@@ -13,7 +13,9 @@ export default () => (
 </button> */}
 
 <div className = "form-container"> 
- <Player /></div>
+ <Player handleLogin={props.handleLogin} /></div>
+
+
   </div>
 
 
