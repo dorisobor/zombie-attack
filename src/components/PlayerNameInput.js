@@ -8,24 +8,20 @@ import React, { Component } from "react";
 
 class PlayerName extends Component {
 
-  
+  // set the two states
  state = {
    playerName: '',
    error: '',
  };
 
- // Sets playerName to the value entered by the user
  handleChange= event => {
    this.setState({ playerName: event.target.value });
  };
 
- /* On form submission, call handleLogin function (in 
- ** App.js) and set the state with the player's name.
- */
+
  submitName = event => {
    event.preventDefault();
-   //Checking playerName is valid - if not,
-   // display an error message to the player.
+   
    if (this.state.playerName === '') {
      this.setState({ error: 'Please enter your name' });
    } else {
@@ -33,6 +29,7 @@ class PlayerName extends Component {
    }
  };
 
+ // the form
  render() {
    
    return (
