@@ -22,7 +22,7 @@ class Counter extends Component {
        if (this.state.moneyScore - this.state.strenghtBoostPrice >= 0){
           this.setState({ 
             moneyScore: this.state.moneyScore - this.state.strenghtBoostPrice,
-            counter: this.state.counter + 1
+            counter: this.state.counter + 1,
             //strenghtBoostPrice: Math.round(this.state.strenghtBoostPrice * 1.1) 
           });
 
