@@ -12,9 +12,7 @@ function Game(props){
     return (
 <div className = "game-container">
 <h2>Fight the zombies</h2>
-{/* <div className="zombie-walking">
-<img src={zombieWalking} alt="walking-zombie"/>
-</div> */}
+
 <DisplayPlayerName  playerName={props.playerName} />
 <Counter />
 
