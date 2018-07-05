@@ -7,20 +7,20 @@ import Counter from "./Counter";
 
 
 
-function Game(props){
+function Game(props) {
 
-    return (
-<div className = "game-container">
-<h2>Fight the zombies</h2>
+  return (
+    <div className="game-container">
+      <h2>Fight the zombies</h2>
 
-<DisplayPlayerName  playerName={props.playerName} />
-<Counter />
+      <DisplayPlayerName playerName={props.playerName} />
+      <Counter />
 
-  </div>
+    </div>
 
-);
-    
- }
- 
+  );
+
+}
+
 
 export default Game;

@@ -11,16 +11,16 @@ import Game from "./Game";
 
 class App extends Component {
 
-  
+
   state = {
-	  loggedIn: false,
-	  playerName: '',
+    loggedIn: false,
+    playerName: '',
     error: '',
   }
 
-	handleLogin = (playerName) => {
-    	this.setState({ loggedIn: true, playerName: playerName });
-  	}
+  handleLogin = (playerName) => {
+    this.setState({ loggedIn: true, playerName: playerName });
+  }
   render() {
     if (this.state.loggedIn) {
       return (
