@@ -5,52 +5,52 @@ import React, { Component } from "react";
 class PlayerName extends Component {
 
   // set the two states the players name and the error message
- state = {
-   playerName: '',
-   error: '',
- };
+  state = {
+    playerName: '',
+    error: '',
+  };
 
- // get the value from the input
- handleChange= event => {
-   this.setState({ playerName: event.target.value });
- };
+  // get the value from the input
+  handleChange = event => {
+    this.setState({ playerName: event.target.value });
+  };
 
 
- submitName = event => {
-   event.preventDefault();
-   
-   if (this.state.playerName === '') {
-     this.setState({ error: "Please enter your name" });
-   } else {
-     this.props.handleLogin(this.state.playerName);
-   }
- };
+  submitName = event => {
+    event.preventDefault();
 
- render() {
-   //if its in an error state then display the error message
-   // make the errorMessage variable empty so it can change to the message 
-  let errorMessage = null;
-  if(this.state.error){
-    errorMessage = <p>{this.state.error}</p>;
-  }
-   return (
+    if (this.state.playerName === '') {
+      this.setState({ error: "Please enter your name" });
+    } else {
+      this.props.handleLogin(this.state.playerName);
+    }
+  };
 
-           //the form
+  render() {
+    //if its in an error state then display the error message
+    // make the errorMessage variable empty so it can change to the message 
+    let errorMessage = null;
+    if (this.state.error) {
+      errorMessage = <p>{this.state.error}</p>;
+    }
+    return (
 
-     <div class="player-form">
+      //the form
 
-       <form onSubmit={this.submitName}>
-          
+      <div class="player-form">
+
+        <form onSubmit={this.submitName}>
+
           <input type="text" placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
-       
-        <button type="submit" value="Start">Start </button>
-      </form>
-      { errorMessage }
 
-     </div>
-   );
- }
+          <button type="submit" value="Start">Start </button>
+        </form>
+        {errorMessage}
+
+      </div>
+    );
+  }
 }
 
 
-  export default PlayerName;
+export default PlayerName;
