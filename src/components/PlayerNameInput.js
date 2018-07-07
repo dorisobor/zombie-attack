@@ -40,13 +40,16 @@ class PlayerName extends Component {
       <div className="player-form">
 
         <form onSubmit={this.submitName}>
-        <div className="form-group">
-        <label for="enterPlayerName">Player name</label>
+          <div className="form-group">
+            <div className="col-5">
 
-          <input type="text"  className="form-control" id="enterPlayerName"
-          placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
+              <label for="enterPlayerName">PLAYER NAME:</label>
 
-          <Button type="submit" value="Start">Start </Button>
+              <input type="text" className="form-control" id="enterPlayerName"
+                placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
+           
+            <Button type="submit" value="Start">Start </Button>
+            </div>
           </div>
         </form>
         <p className="text-danger">{errorMessage}</p>
