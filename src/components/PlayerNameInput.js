@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { withRouter } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 
 class PlayerName extends Component {
@@ -37,15 +37,22 @@ class PlayerName extends Component {
 
       //the form
 
-      <div class="player-form">
+      <div className="player-form">
 
         <form onSubmit={this.submitName}>
+          <div className="form-group">
+            <div className="col-5">
 
-          <input type="text" placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
+              <label for="enterPlayerName">PLAYER NAME:</label>
 
-          <button type="submit" value="Start">Start </button>
+              <input type="text" className="form-control" id="enterPlayerName"
+                placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />
+           
+            <Button type="submit" value="Start">Start </Button>
+            </div>
+          </div>
         </form>
-        {errorMessage}
+        <p className="text-danger">{errorMessage}</p>
 
       </div>
     );
