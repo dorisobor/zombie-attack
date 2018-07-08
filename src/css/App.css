@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-/*the home title font*/
+/*the home page fonts*/
 
 @font-face {
   font-family: Lovethunder;
@@ -19,6 +19,13 @@ body {
   src: url("../fonts/WoodPrint-Regular.otf");
 }
 
+/*the game page  fonts*/
+
+@font-face {
+  font-family: Smoke;
+  src: url("../fonts/SmokeInTheWoodsDEMO.otf");
+}
+
 /*home page*/
 
 .jumbotron {
@@ -26,6 +33,7 @@ body {
   padding:50px;
   background-image: url(../images/forest.gif);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .display-4 {
@@ -68,13 +76,64 @@ label{
   color:white;
 }
 
+
+/* game page*/
+
+.game-container {
+  background-image: url(../images/graveyard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.playername-container {
+bottom:40px;
+position: relative;
+}
+
+.uppgrade-list{
+  margin: auto;
+}
+/* uppgrade images*/
+.column img{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.column p{
+  font-family: Smoke;
+}
+
+.column {
+  float: left;
+  margin: 10px;
+  background-image: url(../images/wood-board.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 140px;
+}
+
+.money-score {
+text-align: left;
+color:white;
+}
+
 /* media screens */
 
 @media screen and (min-width: 1028px) {
   .jumbotron {
     background-image: url(../images/forest.gif);
     background-size: cover;
-    width: 800px;
+    width: 900px;
     height: 550px;
   }
+
+  .game-container {
+    background-image: url(../images/graveyard.jpg);
+    background-size: cover;
+    width: 900px;
+    height: 550px;
+  }
+  
 }

@@ -59,7 +59,7 @@ class Counter extends Component {
       this.setState({
         moneyScore: this.state.moneyScore - this.state.baseballBatPrice,
         counter: this.state.counter + 3,
-        baseballBatPrice: Math.round(this.state.strenghtBoostPrice * 2.5)
+        baseballBatPrice: Math.round(this.state.baseballBatPrice * 2.5)
       });
 
     }
@@ -90,40 +90,47 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <p>${this.state.moneyScore}</p>
+        <h4 className="money-score">Money score:&nbsp;${this.state.moneyScore}</h4>
+        <div className="zombie-walking">
+
+          <img src={zombieWalking} alt="walking-zombie" onClick={this.counterClick} />
+          <p>{this.state.counter}hits</p>
+        </div>
         <div className="uppgrade-list">
-          <div className="strenght-boost">
+          <div className="column">
+          <p>Strenght boost</p>
 
             <img src={strenghtBoostBottle} alt="strenght-boost-bottle" onClick={this.strenghtBoostCounterClick} />
             <p>${this.state.strenghtBoostPrice}</p>
           </div>
-          <div className="slingshot">
+          <div className="column">
+          <p>Slingshot</p>
 
             <img src={slingshot} alt="slingshot" onClick={this.slingshotCounterClick} />
             <p>${this.state.slingshotPrice}</p>
           </div>
-          <div className="baseball-bat">
+          <div className="column">
+          <p>Baseball bat</p>
 
             <img src={baseballBat} alt="baseball-bat" onClick={this.batCounterClick} />
             <p>${this.state.baseballBatPrice}</p>
           </div>
 
-          <div className="spiked-baseball-bat">
+          <div className="column">
+          <p>Spiked baseball bat</p>
 
             <img src={spikedBaseballBat} alt="spiked-baseball-bat" onClick={this.spikedBatCounterClick} />
             <p>${this.state.spikedBatPrice}</p>
           </div>
-          <div className="bomb-container">
+          <div className="column">
+          <p>Bomb</p>
 
             <img src={bomb} alt="bomb" onClick={this.bombCounterClick} />
             <p>${this.state.bombPrice}</p>
           </div>
         </div>
-        <p>{this.state.counter}hits</p>
-        <div className="zombie-walking">
-
-          <img src={zombieWalking} alt="walking-zombie" onClick={this.counterClick} />
-        </div>
+        
+        
       </div>
     )
   }
