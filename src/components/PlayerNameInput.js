@@ -43,7 +43,7 @@ class PlayerName extends Component {
           <div className="form-group">
             <div className="col-5">
 
-              <label for="enterPlayerName">PLAYER NAME:</label>
+              <label htmlFor="enterPlayerName">PLAYER NAME:</label>
 
               <input type="text" className="form-control" id="enterPlayerName"
                 placeholder="Enter your name" value={this.state.value} onChange={this.handleChange} />

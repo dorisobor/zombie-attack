@@ -23,8 +23,6 @@ class Counter extends Component {
     baseballBatPrice: 10,
     spikedBatPrice: 20,
     bombPrice: 30,
-
-    //click:1,
   }
 
   // function for the money score everytime you click it will add 1
@@ -59,7 +57,7 @@ class Counter extends Component {
       this.setState({
         moneyScore: this.state.moneyScore - this.state.baseballBatPrice,
         counter: this.state.counter + 3,
-        baseballBatPrice: Math.round(this.state.strenghtBoostPrice * 2.5)
+        baseballBatPrice: Math.round(this.state.baseballBatPrice * 2.5)
       });
 
     }
@@ -90,40 +88,57 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <p>${this.state.moneyScore}</p>
-        <div className="uppgrade-list">
-          <div className="strenght-boost">
-
-            <img src={strenghtBoostBottle} alt="strenght-boost-bottle" onClick={this.strenghtBoostCounterClick} />
-            <p>${this.state.strenghtBoostPrice}</p>
-          </div>
-          <div className="slingshot">
-
-            <img src={slingshot} alt="slingshot" onClick={this.slingshotCounterClick} />
-            <p>${this.state.slingshotPrice}</p>
-          </div>
-          <div className="baseball-bat">
-
-            <img src={baseballBat} alt="baseball-bat" onClick={this.batCounterClick} />
-            <p>${this.state.baseballBatPrice}</p>
-          </div>
-
-          <div className="spiked-baseball-bat">
-
-            <img src={spikedBaseballBat} alt="spiked-baseball-bat" onClick={this.spikedBatCounterClick} />
-            <p>${this.state.spikedBatPrice}</p>
-          </div>
-          <div className="bomb-container">
-
-            <img src={bomb} alt="bomb" onClick={this.bombCounterClick} />
-            <p>${this.state.bombPrice}</p>
-          </div>
-        </div>
-        <p>{this.state.counter}hits</p>
+        <h4 className="money-score">Money score:&nbsp;${this.state.moneyScore}</h4>
         <div className="zombie-walking">
 
-          <img src={zombieWalking} alt="walking-zombie" onClick={this.counterClick} />
+          <img  className="zombie-walking" src={zombieWalking} alt="walking-zombie" onClick={this.counterClick} />
+          <p className="hit-per-sec-text">{this.state.counter}&nbsp;hits per second</p>
         </div>
+        <div className="uppgrade-list">
+        <h3 className="upgrades">UPGRADES</h3>
+          <div className="column" onClick={this.strenghtBoostCounterClick}>
+          <p className="upgrade-name">Strenght boost</p>
+
+            <img src={strenghtBoostBottle} alt="strenght-boost-bottle"  />
+            <p className="upgrade-info"><span>$</span>{this.state.strenghtBoostPrice}</p>
+            <p className="upgrade-info"><span>+</span>1 hits</p>
+
+          </div>
+          <div className="column" onClick={this.slingshotCounterClick}>
+          <p className="upgrade-name">Slingshot</p>
+
+            <img src={slingshot} alt="slingshot"  />
+            <p className="upgrade-info"><span>$</span>{this.state.slingshotPrice}</p>
+            <p className="upgrade-info"><span>+</span>2 hits</p>
+
+          </div>
+          <div className="column" onClick={this.batCounterClick}>
+          <p className="upgrade-name">Baseball bat</p>
+
+            <img src={baseballBat} alt="baseball-bat" />
+            <p className="upgrade-info"><span>$</span>{this.state.baseballBatPrice}</p>
+            <p className="upgrade-info"><span>+</span>3 hits</p>
+
+          </div>
+
+          <div className="column" onClick={this.spikedBatCounterClick}>
+          <p className="upgrade-name">Spiked baseball bat</p>
+
+            <img src={spikedBaseballBat} alt="spiked-baseball-bat" />
+            <p className="upgrade-info"><span>$</span>{this.state.spikedBatPrice}</p>
+            <p className="upgrade-info"><span>+</span>5 hits</p>
+
+          </div>
+          <div className="column" onClick={this.bombCounterClick}>
+          <p className="upgrade-name">Bomb</p>
+
+            <img src={bomb} alt="bomb" />
+            <p className="upgrade-info"><span>$</span>{this.state.bombPrice}</p>
+            <p className="upgrade-info"><span>+</span>8 hits</p>
+          </div>
+        </div>
+        
+        
       </div>
     )
   }

@@ -10,8 +10,7 @@ import Counter from "./Counter";
 function Game(props) {
 
   return (
-    <div className="game-container">
-      <h2>Fight the zombies</h2>
+    <div className="jumbotron game-container">
 
       <DisplayPlayerName playerName={props.playerName} />
       <Counter />

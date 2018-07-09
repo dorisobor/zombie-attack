@@ -1,4 +1,4 @@
-body {
+body,html {
   margin:0px;
   padding:0px;
 }
@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-/*the home title font*/
+/*the home page fonts*/
 
 @font-face {
   font-family: Lovethunder;
@@ -19,6 +19,13 @@ body {
   src: url("../fonts/WoodPrint-Regular.otf");
 }
 
+/*the game page  fonts*/
+
+@font-face {
+  font-family: Smoke;
+  src: url("../fonts/SmokeInTheWoodsDEMO.otf");
+}
+
 /*home page*/
 
 .jumbotron {
@@ -26,6 +33,7 @@ body {
   padding:50px;
   background-image: url(../images/forest.gif);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .display-4 {
@@ -68,13 +76,148 @@ label{
   color:white;
 }
 
+
+/* game page*/
+
+.game-container {
+  background-image: url(../images/graveyard-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.playername-container {
+font-family: Woodprint;
+color:whitesmoke;
+bottom:40px;
+position: relative;
+}
+
+.zombie-walking{
+  cursor: pointer;
+}
+.hit-per-sec-text{
+  color:wheat;
+}
+
+.uppgrade-list{
+  margin: auto 0;
+  position: relative;
+  bottom:-50px;
+}
+/* uppgrade images*/
+.column img{
+  height: 50px;
+  width: 50px;
+  float: left;
+  /* margin-left: 10px; */
+  margin-top: 0px;
+  position: relative;
+  left: 20px;
+}
+
+.column p{
+  font-family: Smoke;
+ /* margin:1px; */
+ position: relative;
+ right: 20px;
+ /* margin-left:20px; */
+}
+.column span{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.upgrades{
+  font-family: Smoke;
+  border-radius: 5px;
+  border: solid 2px #663B0D; 
+  background: -webkit-gradient(linear, left top, left 25, from(#EED97C), color-stop(4%, #F1E2B6), to(#CEAE64)); 
+  background: -moz-linear-gradient(top, #FFFFFF, #CDDBE4 1px, #FFFFFF 25px); 
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  color:#663B0D;
+}
+
+.upgrade-name {
+ font-size:1.3em;
+ text-align: center;
+ margin:5px;
+}
+.column {
+  float: left;
+  background-image: url(../images/wood-board.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width:180px;
+  cursor: pointer;
+}
+
+.upgrade-info{
+  margin:2px;
+  font-size: 1em;
+}
+
+.money-score {
+text-align: center;
+color:white;
+}
+
 /* media screens */
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1024px) {
   .jumbotron {
     background-image: url(../images/forest.gif);
     background-size: cover;
-    width: 800px;
-    height: 550px;
+    width: 1000px;
+    height: 600px;
   }
+
+  .game-container {
+    background-image: url(../images/graveyard.jpg);
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+
+  .game-container {
+    background-image: url(../images/graveyard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:170vh;
+    
+  }
+
+  .column {
+  position: relative;
+  left:80px; 
+  margin: 5px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  
+
+  .game-container {
+    background-image: url(../images/graveyard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:105vh;
+
+
+    
+  }
+
+ 
+  
 }
