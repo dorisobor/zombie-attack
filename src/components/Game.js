@@ -1,7 +1,4 @@
 import React from "react";
-//imports the gif image as zombieWalking
-// import zombieWalking from "./../images/zombie-walking.gif";
-
 import DisplayPlayerName from "./DisplayPlayerName";
 import Counter from "./Counter";
 
