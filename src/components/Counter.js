@@ -6,10 +6,6 @@ import baseballBat from "./../images/baseball-bat.png";
 import spikedBaseballBat from "./../images/spiked-baseball-bat.png";
 import bomb from "./../images/bomb.png";
 
-
-
-
-
 class Counter extends Component {
 
   // the money score will start at zero in the first state
