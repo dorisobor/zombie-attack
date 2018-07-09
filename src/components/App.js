@@ -8,7 +8,8 @@ import Game from "./Game";
 
 class App extends Component {
 
-
+// if the user has entered their name they will be redirected to the game page
+//the state will change depending on if the user is "logged in" or not
   state = {
     loggedIn: false,
     playerName: '',
