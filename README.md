@@ -2,7 +2,7 @@
 
 ### Created by: Doris Obor 
 
-Try out the game [here](https://dorisobor.github.io/zombie-attack/)
+Try out the game [here](https://dorisobor.github.io/zombie-attack/)<br />
 Link to the repo:[Zombie Attack!] (https://github.com/dorisobor/zombie-attack)
 
 ## Description
