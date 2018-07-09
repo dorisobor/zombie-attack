@@ -92,26 +92,49 @@ position: relative;
 
 .uppgrade-list{
   margin: auto;
+  position: relative;
+  bottom:-80px;
+  text-align: center;
 }
 /* uppgrade images*/
 .column img{
   height: 50px;
   width: 50px;
   cursor: pointer;
+  float: left;
+  /* margin-left: 10px; */
+  margin-top: 0px;
+  position: relative;
+  left: 20px;
 }
 
 .column p{
   font-family: Smoke;
+ /* margin:1px; */
+ position: relative;
+ right: 20px;
+ /* margin-left:20px; */
+}
+.column span{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 
+
+.upgrade-name {
+ font-size:1.3em;
+ text-align: center;
+ margin:5px;
+}
 .column {
   float: left;
-  margin: 10px;
+  margin: 0px;
   background-image: url(../images/wood-board.png);
   background-size:contain;
   background-repeat: no-repeat;
-  height: 90px;
-  width: 140px;
+  height: 100px;
+  width:180px;
+  
 }
 
 .money-score {
@@ -125,15 +148,15 @@ color:white;
   .jumbotron {
     background-image: url(../images/forest.gif);
     background-size: cover;
-    width: 900px;
-    height: 550px;
+    width: 1000px;
+    height: 600px;
   }
 
   .game-container {
     background-image: url(../images/graveyard.jpg);
     background-size: cover;
-    width: 900px;
-    height: 550px;
+    width: 1000px;
+    height: 600px;
   }
   
 }

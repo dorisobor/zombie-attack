@@ -97,36 +97,46 @@ class Counter extends Component {
           <p>{this.state.counter}hits</p>
         </div>
         <div className="uppgrade-list">
+        <h4>Upgrades</h4>
           <div className="column">
-          <p>Strenght boost</p>
+          <p className="upgrade-name">Strenght boost</p>
 
             <img src={strenghtBoostBottle} alt="strenght-boost-bottle" onClick={this.strenghtBoostCounterClick} />
-            <p>${this.state.strenghtBoostPrice}</p>
+            <p className="upgrade-info"><span>$</span>{this.state.strenghtBoostPrice}</p>
+            <p className="upgrade-info"><span>+</span>1 hits</p>
+
           </div>
           <div className="column">
-          <p>Slingshot</p>
+          <p className="upgrade-name">Slingshot</p>
 
             <img src={slingshot} alt="slingshot" onClick={this.slingshotCounterClick} />
-            <p>${this.state.slingshotPrice}</p>
+            <p className="upgrade-info"><span>$</span>{this.state.slingshotPrice}</p>
+            <p className="upgrade-info"><span>+</span>2 hits</p>
+
           </div>
           <div className="column">
-          <p>Baseball bat</p>
+          <p className="upgrade-name">Baseball bat</p>
 
             <img src={baseballBat} alt="baseball-bat" onClick={this.batCounterClick} />
-            <p>${this.state.baseballBatPrice}</p>
+            <p className="upgrade-info"><span>$</span>{this.state.baseballBatPrice}</p>
+            <p className="upgrade-info"><span>+</span>3 hits</p>
+
           </div>
 
           <div className="column">
-          <p>Spiked baseball bat</p>
+          <p className="upgrade-name">Spiked baseball bat</p>
 
             <img src={spikedBaseballBat} alt="spiked-baseball-bat" onClick={this.spikedBatCounterClick} />
-            <p>${this.state.spikedBatPrice}</p>
+            <p className="upgrade-info"><span>$</span>{this.state.spikedBatPrice}</p>
+            <p className="upgrade-info"><span>+</span>5 hits</p>
+
           </div>
           <div className="column">
-          <p>Bomb</p>
+          <p className="upgrade-name">Bomb</p>
 
             <img src={bomb} alt="bomb" onClick={this.bombCounterClick} />
-            <p>${this.state.bombPrice}</p>
+            <p className="upgrade-info"><span>$</span>{this.state.bombPrice}</p>
+            <p className="upgrade-info"><span>+</span>8 hits</p>
           </div>
         </div>
         
