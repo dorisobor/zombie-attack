@@ -2,8 +2,8 @@
 
 ### Created by: Doris Obor 
 
-Try out the game [here](https://dorisobor.github.io/zombie-attack/)<br />
-Link to the repo:[Zombie Attack!] (https://github.com/dorisobor/zombie-attack)
+Try out the game [here](https://dorisobor.github.io/zombie-attack/) <br />
+Link to the repo: [Zombie Attack!](https://github.com/dorisobor/zombie-attack)
 
 ## Description
 The goal is to collect as much bounty money you can by clicking on the zombie.
