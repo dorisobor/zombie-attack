@@ -18,3 +18,9 @@ The game offers different upgrades for the user to buy in order to get more hits
 * [Craftpix](https://craftpix.net/freebies/2d-game-zombie-character-free-sprite-4/)- Used zombie character
 
 * Creaticca Creative Agency [Flaticon](https://www.flaticon.com/free-icon/baseball-bat_487048) - Used baseball bat cursor icon
+
+## Wishlist:
+
+Lower the opacity to the upgrade when the money score is lower than the upgrade price or make an alert popup message when the money score is low.
+
+Make the mobile mode better designed. 
