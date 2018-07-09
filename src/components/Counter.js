@@ -23,6 +23,7 @@ class Counter extends Component {
     baseballBatPrice: 10,
     spikedBatPrice: 20,
     bombPrice: 30,
+    
   }
 
   // function for the money score everytime you click it will add 1
@@ -84,7 +85,9 @@ class Counter extends Component {
     }
   }
 
+ 
 
+//the html structure
   render() {
     return (
       <div>
