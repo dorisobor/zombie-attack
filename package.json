@@ -2,7 +2,7 @@
   "name": "incrimental-game",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": "https://dorisobor.github.io/zombie-attack/",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "node-sass-chokidar": "^1.3.0",
@@ -15,7 +15,6 @@
     "react-router-native": "^4.2.0",
     "react-scripts": "1.1.4",
     "reactstrap": "^6.2.0"
-
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -25,7 +24,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+   "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dorisobor.github.io/zombie-attack/"
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
