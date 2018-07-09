@@ -3,8 +3,8 @@
 ### Created by Doris Obor 
 
 ## Description
-The goal is to gain as much money you can by clicking on the zombie.
-
+The goal is to collect as much bounty money you can by clicking on the zombie.
+The game offers different upgrades for the user to buy in order to get more hits or click per second.
 
 ## Created with:
 * React
