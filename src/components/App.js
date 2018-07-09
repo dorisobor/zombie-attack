@@ -13,7 +13,7 @@ class App extends Component {
   state = {
     loggedIn: false,
     playerName: '',
-    error: '',
+   
   }
 
   handleLogin = (playerName) => {

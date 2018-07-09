@@ -84,7 +84,7 @@ class Counter extends Component {
     }
   }
 
-
+//the html structure
   render() {
     return (
       <div>
