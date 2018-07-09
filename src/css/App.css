@@ -65,6 +65,11 @@ html {
   color: #fff;
 }
 
+
+.lead span {
+  font-weight: bold;
+}
+
 .col-5 {
   margin: auto;
 }
