@@ -18,7 +18,7 @@ The game offers different upgrades for the user to buy in order to get more hits
 ## Credits:
 * [Craftpix](https://craftpix.net/freebies/2d-game-zombie-character-free-sprite-4/)- Used zombie character
 
-* All icons are from [Flaticon] All the credits goes to the creators.
+* All icons are from [Flaticon](https://www.flaticon.com). All the credits goes to the creators.
 
 ## Wishlist:
 
